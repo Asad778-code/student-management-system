@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — Student Management System</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-xl">
+    <a class="navbar-brand" href="index.html">
+      <i class="bi bi-mortarboard-fill"></i> Student Management System
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list text-white fs-4"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link active" href="index.html"><i class="bi bi-house"></i> Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="users.html"><i class="bi bi-people"></i> Students</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle"></i> About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container-xl">
+    <div class="badge rounded-pill mb-3" style="background: rgba(99,102,241,0.1); color: var(--primary-glow); padding: 0.6rem 1.2rem; font-weight: 700; border: 1px solid var(--border-neon);">
+      <i class="bi bi-stars me-1"></i> Version 2.0 Now Live
+    </div>
+    <h1 class="text-gradient">Manage Your Institution <br> with Precision</h1>
+    <p>A unified platform to streamline student administration, data security, and institutional growth.</p>
+    <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+      <a href="users.html" class="btn btn-primary btn-lg px-5">Manage Students</a>
+      <a href="about.html" class="btn btn-outline-secondary btn-lg px-5">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<main class="container-xl">
+  <!-- Key Stats -->
+  <div class="row g-4 mb-5 justify-content-center section-padding">
+    <div class="col-lg-4 col-md-6">
+      <div class="stat-card">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <div class="stat-label">Total Students</div>
+            <div class="stat-number" id="stat-members">—</div>
+          </div>
+          <div class="stat-icon primary"><i class="bi bi-people-fill"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="stat-card">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <div class="stat-label">Server Status</div>
+            <div class="stat-number text-success">Optimal</div>
+          </div>
+          <div class="stat-icon accent"><i class="bi bi-cpu-fill"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="stat-card">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <div class="stat-label">Cloud Backup</div>
+            <div class="stat-number text-info">Secured</div>
+          </div>
+          <div class="stat-icon warning"><i class="bi bi-cloud-check-fill"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <div class="section-padding">
+    <div class="text-center mb-5">
+      <h2 class="text-gradient display-5">Why Choose StudentPro?</h2>
+      <p>Powerful tools designed for the next generation of academic management.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 p-4 border-0">
+          <div class="card-body">
+            <i class="bi bi-shield-lock-fill text-primary fs-1 mb-3 d-block"></i>
+            <h3>Data Security</h3>
+            <p class="small">Enterprise-grade encryption for all student and institutional records.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 p-4 border-0">
+          <div class="card-body">
+            <i class="bi bi-bar-chart-fill text-accent fs-1 mb-3 d-block"></i>
+            <h3>Real-time Analytics</h3>
+            <p class="small">Gain insights into registration trends and student demographics instantly.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 p-4 border-0">
+          <div class="card-body">
+            <i class="bi bi-lightning-charge-fill text-warning fs-1 mb-3 d-block"></i>
+            <h3>Automated Tasks</h3>
+            <p class="small">Reduce manual entry with our intelligent data processing engine.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 p-4 border-0">
+          <div class="card-body">
+            <i class="bi bi-globe text-info fs-1 mb-3 d-block"></i>
+            <h3>Global Access</h3>
+            <p class="small">Manage your data from anywhere in the world with cloud-native tech.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 p-4 border-0">
+          <div class="card-body">
+            <i class="bi bi-headset text-success fs-1 mb-3 d-block"></i>
+            <h3>Dedicated Support</h3>
+            <p class="small">24/7 technical assistance to ensure your operations never stop.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 p-4 border-0">
+          <div class="card-body">
+            <i class="bi bi-layers-fill text-danger fs-1 mb-3 d-block"></i>
+            <h3>Scalable Growth</h3>
+            <p class="small">Whether you have 100 or 10,000 students, we scale with you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Start Guide -->
+  <div class="section-padding">
+    <div class="card p-lg-5 p-4 border-0" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(34, 211, 238, 0.05)) !important;">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="text-gradient mb-4">How It Works</h2>
+          <div class="d-flex gap-4 mb-4">
+            <div class="stat-icon primary flex-shrink-0">1</div>
+            <div>
+              <h5>Add Your Students</h5>
+              <p class="small mb-0">Use the directory to register new student records with ease.</p>
+            </div>
+          </div>
+          <div class="d-flex gap-4 mb-4">
+            <div class="stat-icon accent flex-shrink-0">2</div>
+            <div>
+              <h5>Manage & Filter</h5>
+              <p class="small mb-0">Quickly find and update records using our advanced search tools.</p>
+            </div>
+          </div>
+          <div class="d-flex gap-4">
+            <div class="stat-icon warning flex-shrink-0">3</div>
+            <div>
+              <h5>Export & Report</h5>
+              <p class="small mb-0">Generate professional CSV reports for your administration.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5 text-center bg-dark bg-opacity-50 rounded-4 border border-secondary border-opacity-25">
+            <i class="bi bi-pc-display-horizontal display-1 text-primary opacity-25"></i>
+            <h3 class="mt-4">Ready to Start?</h3>
+            <p class="mb-4">Begin your journey towards a more organized institution today.</p>
+            <a href="users.html" class="btn btn-primary w-100">Go to Directory</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Actions -->
+  <div class="section-padding mb-5">
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-4">
+        <a href="users.html" class="action-card py-5">
+          <i class="bi bi-person-plus-fill fs-1"></i>
+          <span class="fs-4 mt-3">Add Student</span>
+        </a>
+      </div>
+      <div class="col-lg-4">
+        <a href="contact.html" class="action-card py-5">
+          <i class="bi bi-question-circle-fill fs-1"></i>
+          <span class="fs-4 mt-3">Get Help</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="section-padding bg-dark bg-opacity-25 border-top border-secondary border-opacity-10">
+  <div class="container-xl text-center">
+    <div class="mb-4">
+      <i class="bi bi-mortarboard-fill text-primary fs-1"></i>
+      <h4 class="mt-2 text-gradient">StudentPro Management</h4>
+    </div>
+    <div class="d-flex justify-content-center gap-4 mb-4">
+      <a href="index.html" class="nav-link p-0">Home</a>
+      <a href="users.html" class="nav-link p-0">Directory</a>
+      <a href="about.html" class="nav-link p-0">About</a>
+      <a href="contact.html" class="nav-link p-0">Support</a>
+    </div>
+    <p class="mb-0 opacity-50 small">© 2024 Student Management System. All rights reserved.</p>
+  </div>
+</footer>
+
+<div id="toast-container"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  async function loadStats() {
+    try {
+      const res  = await fetch('/api/users');
+      const users = await res.json();
+      document.getElementById('stat-members').textContent = users.count || 0;
+    } catch(e) { console.error(e); }
+  }
+  loadStats();
+</script>
+</body>
+</html>
