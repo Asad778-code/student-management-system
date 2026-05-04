@@ -229,4 +229,18 @@ document.getElementById('exportCSV').addEventListener('click', async (e) => {
   } catch (err) { showToast('Export failed: ' + err.message, 'error'); }
 });
 
+// ── Export as JSON ─────────────────────────────────────────────
+document.getElementById('exportJSON').addEventListener('click', async (e) => {
+  e.preventDefault();
+  try {
+    const res = await fetch(API);
+    const json = await res.json();
+    if (!json.data?.length) { showToast('No students to export', 'info'); return; }
+    const clean = json.data.map(({ name, email, phone, membershipType, status, address }) =>
+      ({ name, email, phone, membershipType, status, address }));
+    downloadFile(JSON.stringify(clean, null, 2), 'students_export.json', 'application/json');
+    showToast(`Exported ${clean.length} students as JSON`, 'success');
+  } catch (err) { showToast('Export failed: ' + err.message, 'error'); }
+});
+
 

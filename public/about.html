@@ -7,6 +7,32 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .about-hero {
+      background: linear-gradient(rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.7)), url('education_tech_future_1777909648850.png');
+      background-size: cover;
+      background-position: center;
+      padding: 10rem 0;
+      border-bottom: 1px solid var(--border-neon);
+    }
+    .img-glow {
+      border-radius: 24px;
+      box-shadow: 0 0 30px rgba(99, 102, 241, 0.2);
+      border: 1px solid var(--border-glass);
+      transition: transform 0.3s ease;
+    }
+    .img-glow:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 50px rgba(99, 102, 241, 0.3);
+    }
+    .feature-icon-lg {
+      font-size: 3rem;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1.5rem;
+    }
+  </style>
 </head>
 <body>
 
@@ -18,41 +44,41 @@
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto gap-1">
-        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house"></i> Dashboard</a></li>
-        <li class="nav-item"><a class="nav-link" href="users.html"><i class="bi bi-people"></i> Students</a></li>
-        <li class="nav-item"><a class="nav-link active" href="about.html"><i class="bi bi-info-circle"></i> About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope"></i> Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house me-1"></i>Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="users.html"><i class="bi bi-people me-1"></i>Students</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html"><i class="bi bi-info-circle me-1"></i>About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope me-1"></i>Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<section class="about-hero mb-5">
-  <div class="container-xl">
-    <h1 class="text-gradient display-3">Our Mission</h1>
+<section class="about-hero text-center mb-5">
+  <div class="container">
+    <h1 class="text-gradient display-3 fw-bold">Our Story</h1>
     <p class="lead text-white opacity-75">Redefining Educational Administration for the Digital Age.</p>
   </div>
 </section>
 
-<main class="container-xl pb-5">
-  <!-- Innovation Section -->
-  <div class="row g-5 align-items-center section-padding">
+<div class="container-xl pb-5">
+  <!-- Section 1: Innovation -->
+  <div class="row g-5 align-items-center mb-5 pb-5">
     <div class="col-lg-6">
       <h2 class="text-gradient mb-4">Innovation at Heart</h2>
-      <p class="mb-4">
+      <p class="mb-4" style="font-size: 1.15rem; line-height: 1.8;">
         StudentPro was born out of a simple necessity: the need for a management system that doesn't just store data, but actively empowers administrators. We combine beautiful design with robust backend architecture to deliver an experience that is as reliable as it is stunning.
       </p>
       <div class="row g-3">
         <div class="col-6">
           <div class="d-flex align-items-center gap-2">
             <i class="bi bi-lightning-fill text-primary"></i>
-            <span class="small fw-bold">Ultra-Fast</span>
+            <span>Ultra-Fast Performance</span>
           </div>
         </div>
         <div class="col-6">
           <div class="d-flex align-items-center gap-2">
             <i class="bi bi-shield-lock-fill text-success"></i>
-            <span class="small fw-bold">Secure</span>
+            <span>Advanced Security</span>
           </div>
         </div>
       </div>
@@ -62,60 +88,59 @@
     </div>
   </div>
 
-  <!-- Core Values -->
-  <div class="section-padding">
-    <div class="text-center mb-5">
+  <!-- Section 2: Core Values -->
+  <div class="row g-4 text-center mb-5 pb-5">
+    <div class="col-12 mb-4">
       <h2 class="text-gradient">Our Core Values</h2>
-      <p>The principles that guide our development.</p>
     </div>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100 text-center p-4">
-          <div class="card-body">
-            <i class="bi bi-gem feature-icon-lg"></i>
-            <h3>Excellence</h3>
-            <p class="small">Striving for perfection in every pixel and every line of code.</p>
-          </div>
+    <div class="col-md-4">
+      <div class="card h-100 p-4">
+        <div class="card-body">
+          <i class="bi bi-gem feature-icon-lg"></i>
+          <h4>Excellence</h4>
+          <p class="text-muted small">We strive for perfection in every line of code and every pixel of design.</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card h-100 text-center p-4">
-          <div class="card-body">
-            <i class="bi bi-people-fill feature-icon-lg"></i>
-            <h3>Inclusion</h3>
-            <p class="small">Building tools that are accessible and intuitive for everyone.</p>
-          </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 p-4">
+        <div class="card-body">
+          <i class="bi bi-people-fill feature-icon-lg"></i>
+          <h4>Inclusion</h4>
+          <p class="text-muted small">Building tools that are accessible and intuitive for everyone, everywhere.</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card h-100 text-center p-4">
-          <div class="card-body">
-            <i class="bi bi-rocket-takeoff-fill feature-icon-lg"></i>
-            <h3>Future-Ready</h3>
-            <p class="small">Always staying ahead with the latest in cloud technology.</p>
-          </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 p-4">
+        <div class="card-body">
+          <i class="bi bi-rocket-takeoff-fill feature-icon-lg"></i>
+          <h4>Future-Ready</h4>
+          <p class="text-muted small">Always ahead of the curve, integrating the latest in cloud technology.</p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Technology -->
-  <div class="card section-margin p-lg-5 p-4 border-primary border-opacity-25">
-    <div class="row align-items-center g-4">
+  <!-- Section 3: The Technology -->
+  <div class="card p-5 mb-5" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(34, 211, 238, 0.1)) !important; border-color: var(--primary) !important;">
+    <div class="row align-items-center">
       <div class="col-md-8">
-        <h2 class="text-gradient mb-3">Modern Technology Stack</h2>
+        <h3 class="text-gradient mb-3">Powered by the Modern Web</h3>
         <p class="mb-0">
-          Our platform leverages <strong>Node.js</strong> for performance and <strong>MongoDB Atlas</strong> for a secure, scalable data layer. Handle thousands of records with ease and grow without limits.
+          Our platform leverages the power of <strong>Node.js</strong> for lightning-fast server responses and 
+          <strong>MongoDB Atlas</strong> for a secure, scalable data layer. This combination allows us to 
+          handle thousands of student records with ease, ensuring your institution is always ready for growth.
         </p>
       </div>
-      <div class="col-md-4 text-center d-none d-md-block">
-        <i class="bi bi-cpu text-primary opacity-25" style="font-size: 5rem;"></i>
+      <div class="col-md-4 text-end d-none d-md-block">
+        <i class="bi bi-cpu" style="font-size: 5rem; opacity: 0.2;"></i>
       </div>
     </div>
   </div>
-</main>
+</div>
 
-<footer class="section-padding"><div class="container-xl text-center"><p>© 2024 Student Management System</p></div></footer>
+<footer><div class="container"><p>© 2024 Student Management System &nbsp;|&nbsp; Built with Precision</p></div></footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
