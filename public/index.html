@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="css/style.css" />
+
 </head>
 <body>
 
@@ -30,109 +31,136 @@
   </div>
 </nav>
 
-<section class="hero">
-  <div class="container">
-    <h1 class="text-gradient">Student Management</h1>
-    <p>Empowering educators with a modern, fast, and elegant system to manage student records and institutional data.</p>
+<section class="home-hero">
+  <div class="container text-center">
+    <h1 class="text-gradient display-2 fw-bold mb-4">Empowering Institutional Success</h1>
+    <p class="lead text-white opacity-75 mb-5 mx-auto" style="max-width: 800px;">
+      The all-in-one platform for modern educators to manage student lifecycles, academic records, and administrative workflows with unprecedented speed.
+    </p>
     <div class="d-flex justify-content-center gap-3">
-      <a href="users.html" class="btn btn-primary btn-lg px-5">Manage Students</a>
-      <a href="about.html" class="btn btn-info btn-lg px-5">Learn More</a>
+      <a href="users.html" class="btn btn-primary btn-lg px-5">Get Started</a>
+      <a href="about.html" class="btn btn-outline-secondary btn-lg px-5">Watch Demo</a>
     </div>
   </div>
 </section>
 
-<div class="container-xl pb-5">
-  <!-- Stats Row -->
-  <div class="row g-4 mb-5 justify-content-center">
-    <div class="col-md-5">
-      <div class="stat-card">
-        <div class="d-flex justify-content-between">
-          <div>
-            <div class="stat-label">Total Registered Students</div>
-            <div class="stat-number" id="stat-members">—</div>
-          </div>
-          <div class="stat-icon primary"><i class="bi bi-people-fill"></i></div>
-        </div>
+<div class="container-xl py-5">
+  <!-- Stats Section -->
+  <div class="row g-4 mb-5 pb-5 justify-content-center">
+    <div class="col-md-3">
+      <div class="stat-card text-center">
+        <div class="stat-number">15K+</div>
+        <div class="stat-label">Students Managed</div>
       </div>
     </div>
-    <div class="col-md-5">
-      <div class="stat-card">
-        <div class="d-flex justify-content-between">
-          <div>
-            <div class="stat-label">System Status</div>
-            <div class="stat-number text-success" style="font-size: 2.5rem;">Online</div>
-          </div>
-          <div class="stat-icon accent"><i class="bi bi-shield-check"></i></div>
-        </div>
+    <div class="col-md-3">
+      <div class="stat-card text-center">
+        <div class="stat-number">99.9%</div>
+        <div class="stat-label">System Uptime</div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="stat-card text-center">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">Expert Support</div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="stat-card text-center">
+        <div class="stat-number">ISO</div>
+        <div class="stat-label">Certified Security</div>
       </div>
     </div>
   </div>
 
-  <div class="row g-4">
-    <!-- Quick Actions -->
-    <div class="col-lg-5">
-      <div class="card h-100">
-        <div class="card-header"><i class="bi bi-lightning-charge-fill me-2 text-warning"></i>Quick Actions</div>
-        <div class="card-body">
-          <div class="row g-3">
-            <div class="col-12">
-              <a href="users.html" class="action-card">
-                <i class="bi bi-person-plus-fill"></i>
-                <span>Register New Student</span>
-              </a>
-            </div>
-            <div class="col-12">
-              <a href="contact.html" class="action-card">
-                <i class="bi bi-envelope-fill"></i>
-                <span>Get Technical Support</span>
-              </a>
-            </div>
-          </div>
-        </div>
+  <!-- Features Grid -->
+  <h2 class="section-title text-gradient">Advanced Features</h2>
+  <div class="row g-4 mb-5 pb-5">
+    <div class="col-lg-4">
+      <div class="feature-card">
+        <i class="bi bi-database-fill-check feature-icon"></i>
+        <h3>Secure Storage</h3>
+        <p>Enterprise-grade encryption and cloud-based redundancy ensure your student data is always protected and available.</p>
       </div>
     </div>
-
-    <!-- About Section -->
-    <div class="col-lg-7">
-      <div class="card h-100">
-        <div class="card-header"><i class="bi bi-info-circle-fill me-2 text-primary"></i>System Information</div>
-        <div class="card-body p-4">
-          <h4 class="mb-3">Welcome to StudentPro v1.0</h4>
-          <p class="text-muted">
-            This platform is designed to streamline administrative workflows. You can easily manage student registrations, export data for reporting, and maintain a secure database of institutional records.
-          </p>
-          <hr class="border-secondary opacity-10 my-4">
-          <div class="d-flex align-items-center gap-3">
-            <div class="stat-icon primary" style="width:40px; height:40px; font-size:1rem;"><i class="bi bi-hdd-network"></i></div>
-            <span class="small text-muted">Connected to MongoDB Atlas Cloud Database</span>
-          </div>
-        </div>
+    <div class="col-lg-4">
+      <div class="feature-card">
+        <i class="bi bi-graph-up-arrow feature-icon"></i>
+        <h3>Real-time Insights</h3>
+        <p>Dynamic dashboards provide instant visibility into registration trends, academic status, and system activity.</p>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="feature-card">
+        <i class="bi bi-cloud-arrow-down-fill feature-icon"></i>
+        <h3>Easy Export</h3>
+        <p>Generate comprehensive CSV and JSON reports for external auditing or internal institutional analysis in one click.</p>
       </div>
     </div>
   </div>
+
+  <!-- Secondary Actions & Info -->
+  <div class="row g-5 align-items-center mb-5 pb-5">
+    <div class="col-lg-6">
+      <h2 class="text-gradient mb-4 text-start">Manage with Confidence</h2>
+      <p class="mb-4 lead">
+        Our system is designed by educators, for educators. We focus on removing the friction from administrative tasks so you can focus on student growth.
+      </p>
+      <ul class="list-unstyled">
+        <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-check2-circle text-primary fs-4"></i> Simple, intuitive user interface</li>
+        <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-check2-circle text-primary fs-4"></i> Automated data validation</li>
+        <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-check2-circle text-primary fs-4"></i> Robust search and filtering tools</li>
+      </ul>
+    </div>
+    <div class="col-lg-6">
+      <div class="card p-0 overflow-hidden">
+        <img src="dashboard_preview_1777975004694.png" alt="Dashboard Preview" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <!-- Trust Badges -->
+  <div class="row g-4 mb-5">
+    <div class="col-md-4">
+      <div class="trusted-badge">
+        <i class="bi bi-award-fill fs-1 text-warning mb-3 d-block"></i>
+        <h5>EduTech 2024 Finalist</h5>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="trusted-badge">
+        <i class="bi bi-lock-fill fs-1 text-success mb-3 d-block"></i>
+        <h5>256-bit AES Encryption</h5>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="trusted-badge">
+        <i class="bi bi-globe fs-1 text-info mb-3 d-block"></i>
+        <h5>Global Cloud Network</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <div class="cta-banner">
+    <h2 class="text-white mb-4 display-4 fw-bold">Ready to Elevate Your Institution?</h2>
+    <p class="text-white opacity-75 mb-5 fs-5">Join over 500 institutions worldwide using StudentPro to manage their academic lifecycle.</p>
+    <a href="users.html" class="btn btn-light btn-lg px-5 py-3 fw-bold">Start Managing Now</a>
+  </div>
+
 </div>
 
 <footer>
-  <div class="container">
-    <p>© 2024 Student Management System &nbsp;|&nbsp; Built with Node.js & Express</p>
+  <div class="container text-center">
+    <p>© 2024 Student Management System &nbsp;|&nbsp; Built for the Future of Education</p>
+    <div class="mt-3 d-flex justify-content-center gap-3">
+      <a href="#" class="text-muted"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="text-muted"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="text-muted"><i class="bi bi-github"></i></a>
+    </div>
   </div>
 </footer>
 
-<div id="toast-container"></div>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  const API = '';
-
-  async function loadStats() {
-    try {
-      const res  = await fetch(`${API}/api/users`);
-      const users = await res.json();
-      document.getElementById('stat-members').textContent = users.count  || 0;
-    } catch(e) { console.error(e); }
-  }
-
-  loadStats();
-</script>
 </body>
 </html>

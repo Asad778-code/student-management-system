@@ -551,3 +551,90 @@ footer {
   border-top: 1px solid var(--border-glass);
   color: var(--text-muted);
 }
+/* -- Home Page Extensions ------------------------------------- */
+.home-hero {
+  background: linear-gradient(rgba(2, 6, 23, 0.8), rgba(2, 6, 23, 0.8)), url(" ../dashboard_preview_1777975004694.png\);
+ background-size: cover;
+ background-position: center;
+ padding: 12rem 0 8rem;
+ border-bottom: 1px solid var(--border-neon);
+}
+
+.feature-card {
+ background: var(--bg-glass);
+ border: 1px solid var(--border-glass);
+ border-radius: 24px;
+ padding: 2.5rem;
+ text-align: center;
+ transition: all 0.3s ease;
+ height: 100%;
+}
+
+.feature-card:hover {
+ transform: translateY(-10px);
+ border-color: var(--primary);
+ box-shadow: 0 10px 40px rgba(99, 102, 241, 0.2);
+}
+
+.feature-icon {
+ font-size: 3.5rem;
+ margin-bottom: 1.5rem;
+ display: inline-block;
+ background: linear-gradient(135deg, var(--primary), var(--accent));
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+
+.section-title {
+ font-size: 3rem;
+ font-weight: 800;
+ margin-bottom: 3rem;
+ text-align: center;
+}
+
+.trusted-badge {
+ background: rgba(255, 255, 255, 0.05);
+ border: 1px solid var(--border-glass);
+ padding: 2rem;
+ border-radius: 20px;
+ text-align: center;
+ transition: background 0.3s ease;
+}
+
+.trusted-badge:hover {
+ background: rgba(255, 255, 255, 0.08);
+}
+
+.cta-banner {
+ background: linear-gradient(135deg, var(--primary), var(--accent));
+ border-radius: 30px;
+ padding: 5rem;
+ text-align: center;
+ margin-top: 5rem;
+ position: relative;
+ overflow: hidden;
+}
+
+.cta-banner::after {
+ content: \\;
+ position: absolute;
+ top: 0; left: 0; width: 100%; height: 100%;
+ background: radial-gradient(circle at 70% 30%, rgba(255,255,255,0.2), transparent 60%);
+}
+
+.cta-banner h2, .cta-banner p {
+ position: relative;
+ z-index: 1;
+}
+
+.btn-light {
+ background: #fff !important;
+ color: var(--primary) !important;
+ border: none !important;
+}
+
+.btn-light:hover {
+ background: var(--primary-glow) !important;
+ color: #fff !important;
+ transform: scale(1.05);
+}
